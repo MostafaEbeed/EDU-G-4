@@ -30,7 +30,7 @@ public class InventoryController : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.I))
+        /*if (Input.GetKeyUp(KeyCode.I))
         {
             if(inventoryUI.isActiveAndEnabled == false)
             {
@@ -40,7 +40,7 @@ public class InventoryController : MonoBehaviour
             {
                 inventoryUI.Hide();
             }
-        }
+        } */
     }
 
     private void PrepareInventoryData()
