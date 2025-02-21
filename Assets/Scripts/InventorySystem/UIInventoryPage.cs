@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -116,7 +117,7 @@ public class UIInventoryPage : MonoBehaviour
         OnItemActionRequested?.Invoke(index);
     }
 
-    [ContextMenu("SHow")]
+    [Button]
     public void Show()
     {
         gameObject.SetActive(true);
@@ -156,7 +157,7 @@ public class UIInventoryPage : MonoBehaviour
         actionPanel.Toggle(false);
     }
 
-    [ContextMenu("Hide")]
+    [Button]
     public void Hide()
     {
         panelSlider.ClosePanel();

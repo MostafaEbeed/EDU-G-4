@@ -1,3 +1,4 @@
+using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,7 +30,7 @@ public class UIPanelSlider : MonoBehaviour
         _targetPanel.localPosition = closedPos;
     }
 
-    [ContextMenu("Open")]
+    [Button]
     public void OpenPanel()
     {
         _targetPanel.GetComponent<Image>().raycastTarget = true;
@@ -41,7 +42,7 @@ public class UIPanelSlider : MonoBehaviour
         LeanTween.alpha(_targetPanel, 1.0f, 0.5f).setRecursive(false);   */
     }
 
-    [ContextMenu("Close")]
+    [Button]
     public void ClosePanel()
     {
         _targetPanel.GetComponent<Image>().raycastTarget = false;
